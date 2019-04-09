@@ -12,6 +12,14 @@ const client = contentful.createClient({
 const getAboutEntry = entry => entry.sys.contentType.sys.id === 'about';
 
 const plugins = [
+  {
+    resolve: `gatsby-source-contentful`,
+    options: {
+      spaceId: `p1fhae7qcmga`,
+      accessToken: `16bcf9cd974f48e7d151dd12652ab16efd7a325f9925b3e122ec6f0a05d5b3d9`,
+    },
+  },
+
   'gatsby-plugin-react-helmet',
   {
     resolve: 'gatsby-plugin-manifest',
