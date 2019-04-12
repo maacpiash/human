@@ -107,7 +107,6 @@ const Project = ({
   name,
   description,
   projectUrl,
-  repositoryUrl,
   type,
   publishedDate,
   logo,
@@ -135,14 +134,7 @@ const Project = ({
           >
             <Box mx={1} fontSize={5}>
               <SocialLink
-                name="Check repository"
-                fontAwesomeIcon="github"
-                url={repositoryUrl}
-              />
-            </Box>
-            <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="See project"
+                name="See paper"
                 fontAwesomeIcon="globe"
                 url={projectUrl}
               />
@@ -170,7 +162,6 @@ Project.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   projectUrl: PropTypes.string.isRequired,
-  repositoryUrl: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   publishedDate: PropTypes.string.isRequired,
   logo: PropTypes.shape({
@@ -187,12 +178,12 @@ const Publications = () => (
       query={graphql`
         query PublicationssQuery {
           contentfulAbout {
-            projects {
+            publications {
               id
               name
               description
               projectUrl
-              publishedDate(formatString: "YYYY")
+              publishedDate(formatString: "MMM-YYYY")
               type
               logo {
                 title
@@ -206,7 +197,7 @@ const Publications = () => (
       `}
       render={({ contentfulAbout }) => (
         <CardContainer minWidth="350px">
-          {contentfulAbout.projects.map((p, i) => (
+          {contentfulAbout.publications.map((p, i) => (
             <Fade bottom delay={i * 200}>
               <Project key={p.id} {...p} />
             </Fade>

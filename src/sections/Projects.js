@@ -184,7 +184,7 @@ const Projects = () => (
               name
               description
               repositoryUrl
-              publishedDate(formatString: "YYYY")
+              publishedDate(formatString: "MMM-YYYY")
               type
               logo {
                 title
