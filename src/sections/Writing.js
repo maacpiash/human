@@ -131,7 +131,6 @@ const Writing = () => (
     `}
     render={({ allMediumPost, isMediumUserDefine }) => {
       const posts = edgeToArray(allMediumPost).map(parsePost);
-      console.log('POSTS', posts);
       return (
         <Section.Container id="writing" Background={Background}>
           <Section.Header name="Writing" icon="✍️" label="writing" />

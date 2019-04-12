@@ -106,7 +106,7 @@ const ProjectTag = styled.div`
 const Project = ({
   name,
   description,
-  repositoryUrl,
+  projectUrl,
   type,
   publishedDate,
   logo,
@@ -134,9 +134,9 @@ const Project = ({
           >
             <Box mx={1} fontSize={5}>
               <SocialLink
-                name="Check repository"
-                fontAwesomeIcon="github"
-                url={repositoryUrl}
+                name="See paper"
+                fontAwesomeIcon="globe"
+                url={projectUrl}
               />
             </Box>
           </Flex>
@@ -161,8 +161,7 @@ const Project = ({
 Project.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  // projectUrl: PropTypes.string.isRequired,
-  repositoryUrl: PropTypes.string.isRequired,
+  projectUrl: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   publishedDate: PropTypes.string.isRequired,
   logo: PropTypes.shape({
@@ -172,18 +171,18 @@ Project.propTypes = {
   }).isRequired,
 };
 
-const Projects = () => (
-  <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="📜" Box="notebook" />
+const Publications = () => (
+  <Section.Container id="publications" Background={Background}>
+    <Section.Header name="Publications" icon="📜" Box="notebook" />
     <StaticQuery
       query={graphql`
-        query ProjectsQuery {
+        query PublicationssQuery {
           contentfulAbout {
-            projects {
+            publications {
               id
               name
               description
-              repositoryUrl
+              projectUrl
               publishedDate(formatString: "MMM-YYYY")
               type
               logo {
@@ -198,7 +197,7 @@ const Projects = () => (
       `}
       render={({ contentfulAbout }) => (
         <CardContainer minWidth="350px">
-          {contentfulAbout.projects.map((p, i) => (
+          {contentfulAbout.publications.map((p, i) => (
             <Fade bottom delay={i * 200}>
               <Project key={p.id} {...p} />
             </Fade>
@@ -209,4 +208,4 @@ const Projects = () => (
   </Section.Container>
 );
 
-export default Projects;
+export default Publications;
