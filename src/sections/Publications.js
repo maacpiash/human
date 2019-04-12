@@ -106,6 +106,7 @@ const ProjectTag = styled.div`
 const Project = ({
   name,
   description,
+  projectUrl,
   repositoryUrl,
   type,
   publishedDate,
@@ -139,6 +140,13 @@ const Project = ({
                 url={repositoryUrl}
               />
             </Box>
+            <Box mx={1} fontSize={5}>
+              <SocialLink
+                name="See project"
+                fontAwesomeIcon="globe"
+                url={projectUrl}
+              />
+            </Box>
           </Flex>
           <ImageSubtitle
             bg="primaryLight"
@@ -161,7 +169,7 @@ const Project = ({
 Project.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  // projectUrl: PropTypes.string.isRequired,
+  projectUrl: PropTypes.string.isRequired,
   repositoryUrl: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   publishedDate: PropTypes.string.isRequired,
@@ -172,18 +180,18 @@ Project.propTypes = {
   }).isRequired,
 };
 
-const Projects = () => (
-  <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="📜" Box="notebook" />
+const Publications = () => (
+  <Section.Container id="publications" Background={Background}>
+    <Section.Header name="Publications" icon="📜" Box="notebook" />
     <StaticQuery
       query={graphql`
-        query ProjectsQuery {
+        query PublicationssQuery {
           contentfulAbout {
             projects {
               id
               name
               description
-              repositoryUrl
+              projectUrl
               publishedDate(formatString: "YYYY")
               type
               logo {
@@ -209,4 +217,4 @@ const Projects = () => (
   </Section.Container>
 );
 
-export default Projects;
+export default Publications;
