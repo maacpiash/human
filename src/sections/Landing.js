@@ -79,8 +79,8 @@ const LandingPage = () => (
               textAlign="center"
             >
               <TextLoop
-                springConfig={{ stiffness: 200, damping: 10 }}
-                interval={1250}
+                // springConfig={{ stiffness: 200, damping: 10 }}
+                interval={1500}
               >
                 {roles.map(text => (
                   <Text width={[300, 500]} key={text}>

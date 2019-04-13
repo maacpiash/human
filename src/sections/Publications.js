@@ -183,7 +183,7 @@ const Publications = () => (
               name
               description
               projectUrl
-              publishedDate(formatString: "MMM-YYYY")
+              publishedDate(formatString: "MMM YYYY")
               type
               logo {
                 title
