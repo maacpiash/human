@@ -133,15 +133,16 @@ const Project = ({
               float: 'right',
             }}
           >
-            <Box mx={1} fontSize={5}>
-              {
-                (projectUrl !== repositoryUrl) &&
+            {projectUrl !== repositoryUrl && (
+              <Box mx={1} fontSize={5}>
                 <SocialLink
-                  name="View website"
+                  name="View live"
                   fontAwesomeIcon="globe"
                   url={repositoryUrl}
-                />                
-              }
+                />
+              </Box>
+            )}
+            <Box mx={1} fontSize={5}>
               <SocialLink
                 name="Check repository"
                 fontAwesomeIcon="github"
