@@ -106,6 +106,7 @@ const ProjectTag = styled.div`
 const Project = ({
   name,
   description,
+  projectUrl,
   repositoryUrl,
   type,
   publishedDate,
@@ -133,6 +134,14 @@ const Project = ({
             }}
           >
             <Box mx={1} fontSize={5}>
+              {
+                (projectUrl !== repositoryUrl) &&
+                <SocialLink
+                  name="View website"
+                  fontAwesomeIcon="globe"
+                  url={repositoryUrl}
+                />                
+              }
               <SocialLink
                 name="Check repository"
                 fontAwesomeIcon="github"
@@ -161,7 +170,7 @@ const Project = ({
 Project.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  // projectUrl: PropTypes.string.isRequired,
+  projectUrl: PropTypes.string.isRequired,
   repositoryUrl: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   publishedDate: PropTypes.string.isRequired,
@@ -183,6 +192,7 @@ const Projects = () => (
               id
               name
               description
+              projectUrl
               repositoryUrl
               publishedDate(formatString: "MMM YYYY")
               type
