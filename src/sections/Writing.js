@@ -129,7 +129,7 @@ const Writing = () => (
         }
       }
     `}
-    render={({ allMediumPost, isMediumUserDefine }) => {
+    render={({ allMediumPost }) => {
       const posts = edgeToArray(allMediumPost).map(parsePost);
       return (
         <Section.Container id="writing" Background={Background}>

@@ -58,7 +58,6 @@ const LandingPage = () => (
       `}
       render={data => {
         const { name, socialLinks, roles } = data.contentfulAbout;
-        console.log('SOCIAL CONTENT', data.contentfulAbout);
         return (
           <Fragment>
             <Heading
