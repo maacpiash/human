@@ -138,7 +138,7 @@ const Project = ({
                 <SocialLink
                   name="View live"
                   fontAwesomeIcon="globe"
-                  url={repositoryUrl}
+                  url={projectUrl}
                 />
               </Box>
             )}
