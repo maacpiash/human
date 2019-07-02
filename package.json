@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cleandir ./.cache && gatsby build",
-    "develop": "cleandir ./.cache && gatsby develop",
+    "dev": "cleandir ./.cache && gatsby develop",
     "start": "npm run develop",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js"
@@ -51,6 +51,7 @@
     "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
     "react-markdown": "^4.0.3",
+    "react-netlify-form": "^2.1.5",
     "react-reveal": "^1.2.2",
     "react-scroll-section": "^1.3.0",
     "react-text-loop": "^2.0.1",

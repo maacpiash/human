@@ -7,6 +7,8 @@ import Publications from '../sections/Publications';
 import Writing from '../sections/Writing';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Contact from '../sections/Contact';
+// import PlainForm from '../sections/PlainForm';
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +18,7 @@ const IndexPage = () => (
     <Projects />
     <Publications />
     <Writing />
+    <Contact />
     <Footer />
   </Layout>
 );
