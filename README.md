@@ -1,23 +1,33 @@
-<h1 align="center">Welcome to my personal website 👋</h1>
+<h1 align="center">www.maacpiash.com</h1>
+<h3 align="center">Personal website showcasing my contact info, short bio, projects, publications, and writing.</h3>
+
 <p align="center">
+  <a href="https://app.netlify.com/sites/maacpiash/deploys" target="_blank">
+    <img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fdeveloper.oswaldlabs.com%2Fnetlify-status%2F354bcbe8-0c61-4710-983a-51a064bf4b41&style=flat-square" />
+  </a>
   <a href="https://www.maacpiash.com" target="_blank">
-    <img src="https://img.shields.io/website/https/maacpiash.com.svg" />
+    <img src="https://img.shields.io/website/https/maacpiash.com.svg?style=flat-square" />
   </a>
   <a href="https://travis-ci.com/maacpiash/human" target="_blank">
-    <img src="https://travis-ci.com/maacpiash/human.svg?branch=master" />
+    <img src="https://travis-ci.com/maacpiash/human.svg?branch=master&style=flat-square" />
   </a>
   <a href="https://github.com/maacpiash/KonSchool/commits">
-    <img src="https://img.shields.io/github/last-commit/maacpiash/human.svg" alt="GitHub last commit">
+    <img src="https://img.shields.io/github/last-commit/maacpiash/human.svg?style=flat-square" alt="GitHub last commit">
     </a>
   <a href="https://github.com/maacpiash/human/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/maacpiash/human.svg" alt="License">
-  </a>
-  <a href="https://twitter.com/maacpiash">
-    <img alt="Twitter: maacpiash" src="https://img.shields.io/twitter/follow/maacpiash.svg?style=social" target="_blank" />
+    <img src="https://img.shields.io/github/license/maacpiash/human.svg?style=flat-square" alt="License">
   </a>
 </p>
 
-> Personal website showcasing my info, projects, publications and writing.
+## 🤷 But why is this repo called `human`?
+
+The previous version of my website was virtually a CLI, almost exactly like the homepage of [Shelley Vohr](https://codebyte.re).
+
+<img src="http://g.recordit.co/tBFIO33EGX.gif" />
+
+That version received polarizing responses from my friends. My developer friends loved it so much that they wanted to see the source code immediately. On the other hand, everyone else (*human*s) couldn't find a thing about me on that website. My girlfriend was in the latter category.
+
+So, I created this website, as a more _human_-friendly version, that everybody could appreciate.
 
 ## 🖥 Technologies used
 
@@ -29,7 +39,7 @@
 
 ## 🙏 Acknowledgement
 
-Made using [this starter template](https://github.com/EmaSuriano/gatsby-starter-mate).
+Made using [this starter template](https://github.com/EmaSuriano/gatsby-starter-mate) by Emanuel Suriano.
 
 ## 🤝 Contributing
 
@@ -38,6 +48,10 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 ## 👍 Show your support
 
 Give a ⭐️ if this project helped you!
+
+<a href="https://twitter.com/maacpiash">
+  <img alt="Twitter: maacpiash" src="https://img.shields.io/twitter/follow/maacpiash.svg?style=social" target="_blank" />
+</a>
 
 ---
 
