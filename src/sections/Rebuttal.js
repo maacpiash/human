@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Box, Flex } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
+import ReactHtmlParser from 'react-html-parser';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
-import ReactHtmlParser from 'react-html-parser';
 
 const Background = () => (
   <div>
