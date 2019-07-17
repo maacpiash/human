@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Box, Flex } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
-import ReactMarkdown from 'react-markdown';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
-import markdownRenderer from '../components/MarkdownRenderer';
+import ReactHtmlParser from 'react-html-parser';
 
 const Background = () => (
   <div>
@@ -33,7 +32,7 @@ const Background = () => (
 
 const Rebuttal = () => (
   <Section.Container id="about" Background={Background}>
-    <Section.Header name="About me" icon="🙋‍♂️" label="person" />
+    <Section.Header name="কিছু দরকারী কথা" />
     <StaticQuery
       query={graphql`
         query {
@@ -47,15 +46,16 @@ const Rebuttal = () => (
         }
       `}
       render={data => {
-        const { aboutMe } = data.contentfulPlainText;
+        const { mainBody } = data.contentfulPlainText;
         return (
           <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
             <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
               <Fade bottom>
-                <ReactMarkdown
-                  source={aboutMe.childMarkdownRemark.rawMarkdownBody}
-                  renderers={markdownRenderer}
-                />
+                <div>
+                  {ReactHtmlParser(
+                    String(mainBody.childMarkdownRemark.rawMarkdownBody),
+                  )}
+                </div>
               </Fade>
             </Box>
           </Flex>
