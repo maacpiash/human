@@ -44,12 +44,12 @@ const plugins = [
 ];
 
 module.exports = client.getEntries().then(() => {
-  plugins.push({
-    resolve: 'gatsby-source-medium',
-    options: {
-      username: '@maacpiash',
-    },
-  });
+  // plugins.push({
+  //   resolve: 'gatsby-source-medium',
+  //   options: {
+  //     username: '@maacpiash',
+  //   },
+  // });
 
   if (ANALYTICS_ID) {
     plugins.push({
