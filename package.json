@@ -24,7 +24,11 @@
     "PWA",
     "portfolio"
   ],
-  "author": "Ahad Chowdhury",
+  "author": {
+    "name": "Mohammad Abdul Ahad Chowdhury",
+    "email": "ahadc@maacpiash.com",
+    "url": "https://www.maacpiash.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/maacpiash/human/issues"
