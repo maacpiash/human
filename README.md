@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/website/https/maacpiash.com.svg?style=flat-square" />
   </a>
   <a href="https://travis-ci.com/maacpiash/human" target="_blank">
-    <img src="https://travis-ci.com/maacpiash/human.svg?branch=master&style=flat-square" />
+    <img src="https://img.shields.io/travis/maacpiash/human?style=flat-square" />
   </a>
   <a href="https://github.com/maacpiash/KonSchool/commits">
     <img src="https://img.shields.io/github/last-commit/maacpiash/human.svg?style=flat-square" alt="GitHub last commit">
@@ -39,7 +39,7 @@ So, I created this website, as a more _human_-friendly version, that everybody c
 
 ## 🙏 Acknowledgement
 
-Made using [this starter template](https://github.com/EmaSuriano/gatsby-starter-mate) by Emanuel Suriano.
+Made using [this starter template](https://github.com/EmaSuriano/gatsby-starter-mate) by [Emanuel Suriano](https://emasuriano.com).
 
 ## 🤝 Contributing
 
