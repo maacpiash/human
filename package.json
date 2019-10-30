@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-mate",
+  "name": "human",
   "version": "2.2.0",
-  "description": "Gatsby v2 starter to create a top notch portfolio!",
+  "description": "A human-friendly version of my website.",
   "main": "index.js",
   "scripts": {
     "build": "cleandir ./.cache && gatsby build",
@@ -24,7 +24,7 @@
     "PWA",
     "portfolio"
   ],
-  "author": "Ema Suriano",
+  "author": "Ahad Chowdhury",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/maacpiash/human/issues"
