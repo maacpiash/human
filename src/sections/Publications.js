@@ -168,6 +168,7 @@ Project.propTypes = {
     image: PropTypes.shape({
       src: PropTypes.string,
     }),
+    title: PropTypes.string.isRequired,
   }).isRequired,
 };
 
