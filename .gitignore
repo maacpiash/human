@@ -65,7 +65,7 @@ typings/
 public/
 bin/
 .gatsby-context.js
-netlify.toml
+# netlify.toml
 
 # mac FS
 .DS_Store
