@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://app.netlify.com/sites/maacpiash/deploys" target="_blank">
-    <img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fdeveloper.oswaldlabs.com%2Fnetlify-status%2F354bcbe8-0c61-4710-983a-51a064bf4b41&style=flat-square" />
+    <img src="https://img.shields.io/netlify/354bcbe8-0c61-4710-983a-51a064bf4b41?style=flat-square" />
   </a>
   <a href="https://www.maacpiash.com" target="_blank">
     <img src="https://img.shields.io/website/https/maacpiash.com.svg?style=flat-square" />
