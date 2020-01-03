@@ -99,6 +99,16 @@ const Writing = () => {
   const URL = 'https://medium.com/maacpiash';
   const posts = [
     {
+      id: '380a9adbfa55',
+      title: 'শার্প সমাচার (২): ডেলিগেট মেথড',
+      text:
+        'ডেলিগেট মেথড সি-শার্প ল্যাংগুয়েজের এক অসাধারণ ফিচার। এই ফিচার ব্যবহার করে সহজেই একটা মেথডকে একটা অবজেক্টের মত করে ব্যবহার করা যায়।…',
+      time: 4.510377358490566,
+      date: 1578088490327,
+      image: `${CDN}/1*UnZWxducUb1_c4SB5VmzBg.jpeg`,
+      url: `${URL}/শার্প-সমাচার-২-ডেলিগেট-মেথড-380a9adbfa55`,
+    },
+    {
       id: '1be2df4701f1',
       title: 'The Myth of Digital Ecosystem',
       time: 7.558490566037736,
